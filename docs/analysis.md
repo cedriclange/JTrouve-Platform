@@ -14,7 +14,8 @@ HARDWARE REQUIEREMENT
 - use of microphone
 - use of gallery
 - connectivity (Wifi - Mobile data)
-- 
+- GPS
+- Location
 
 API REQUIREMENT
 ===============
@@ -23,8 +24,6 @@ API REQUIREMENT
 - Windows Phone : 8.1
 
  
-
-
 TYPE OF ACCOUNTS
 ================
 - Bronze(normal account with limited features on Ads)
@@ -33,4 +32,34 @@ TYPE OF ACCOUNTS
 
 there is a possibility to upgrade an account to any type
 
+BASIC FUNCTIONALITIES
+=====================
+- Liste places : 
+	- hotels: name, address, city
+ 	- restaurant : name, address, city
+	- Amusement : name, addresse, city 
+	- Parks : name, addresse, city, 
+- liste products
+- publish Ads
+
+
+DATABASE ENTITIES
+=================
+
+=================   ================ 		=================	=================	=========================
+= PLACE TABLE   =   = PLACE TYPE   =		= PRODUCT 	=	= CATEGORY	=	= USER	   	        =	
+=================   ================		=================	=================	=========================
+= + Id		=   = + id	   =		= + Id		=	= + Id		=	= + iD			=
+= + Name	=   = + Name	   =		= + Name	=	= + Name	=	= + Username		=		
+= + Description =   ================		= + Price	=	=================	= + Firstname		=
+= + Adress	=   ================		= + Currency	=				= + Lastname		=
+= + TypeId	=   = LOCATION TABL=		= + Description =	=================	= + Email		=
+= + LocationId	=   ================		= + CategoryId  =	= ACCOUNT TYPE  =	= + Password		=
+= + AuthorId	=   = + id	   =		= + PlaceId	=	=================	= + Phonenumber		=
+=		=   = 		   =		= + Photo	=	= + Id		=	= + CurrentLocationId	=
+=================   = + Name	   =		= + AuthorId	=	= + Name	=	= + ProfilePhoto	=
+		    ================		=================	=================	= + AccountTypeId		=
+												=========================
+
+ 
 
